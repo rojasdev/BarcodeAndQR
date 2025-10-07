@@ -39,7 +39,7 @@ public class FragmentTwo extends Fragment {
     }
     private Bitmap generateBarcode(String content) throws WriterException {
         Code128Writer code128Writer = new Code128Writer();
-        BitMatrix bitMatrix = code128Writer.encode(content, BarcodeFormat.CODE_128, 512, 256);
+        BitMatrix bitMatrix = code128Writer.encode(content, BarcodeFormat.CODE_128, 512, 180);
 
         int width = bitMatrix.getWidth();
         int height = bitMatrix.getHeight();

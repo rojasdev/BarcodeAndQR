@@ -46,7 +46,7 @@ public class FragmentOne extends Fragment {
 
         for (int x = 0; x < width; x++) {
             for (int y = 0; y < height; y++) {
-                bitmap.setPixel(x, y, bitMatrix.get(x, y) ? getResources().getColor(R.color.black) : getResources().getColor(R.color.white));
+                bitmap.setPixel(x, y, bitMatrix.get(x, y) ? getResources().getColor(R.color.purple_700) : getResources().getColor(R.color.white));
             }
         }
 
